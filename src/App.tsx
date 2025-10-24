@@ -8,6 +8,8 @@ import InvestmentThesis from "./pages/InvestmentThesis";
 import Processing from "./pages/Processing";
 import Discovery from "./pages/Discovery";
 import StartupDetail from "./pages/StartupDetail";
+import Auth from "./pages/Auth";
+import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +26,8 @@ const App = () => (
           <Route path="/processing" element={<Processing />} />
           <Route path="/discovery" element={<Discovery />} />
           <Route path="/startup/:id" element={<StartupDetail />} />
+          <Route path="/auth" element={<Auth />} />
+          <Route path="/profile" element={<Profile />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -16,11 +16,21 @@ export const Navigation = () => {
 
           {/* Navigation Links */}
           <div className="flex items-center gap-4">
-            <Button variant="ghost" size="sm" className="text-foreground hover:text-primary">
+            <Button 
+              variant="ghost" 
+              size="sm" 
+              className="text-foreground hover:text-primary"
+              onClick={() => window.location.href = '/auth'}
+            >
               Login
             </Button>
-            <Button variant="outline" size="sm" className="text-foreground hover:text-primary">
-              Admin
+            <Button 
+              variant="outline" 
+              size="sm" 
+              className="text-foreground hover:text-primary"
+              onClick={() => window.location.href = '/profile'}
+            >
+              Profile
             </Button>
           </div>
         </div>
